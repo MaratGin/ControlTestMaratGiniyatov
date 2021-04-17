@@ -46,6 +46,7 @@ public class MainClass {
 
     public static void main(String[] args) throws IOException, ParseException {
         new MainClass().run("/Users/user/IdeaProjects/socialnetworktest2/src/itis/socialtest/resources/PostDatabase.csv", "/Users/user/IdeaProjects/socialnetworktest2/src/itis/socialtest/resources/Authors.csv");
+
     }
 
     private void run(String postsSourcePath, String authorsSourcePath) throws IOException, ParseException {
@@ -98,7 +99,7 @@ public class MainClass {
         for (Post post:postslist) {
             System.out.println(post);
         }
-
+      allPosts=postslist;
 
 
 

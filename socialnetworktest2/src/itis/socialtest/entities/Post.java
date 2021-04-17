@@ -48,11 +48,11 @@ public class Post {
 
     @Override
     public String toString() {
-        return "Post{" +
-                "date='" + date + '\'' +
-                ", content='" + content + '\'' +
-                ", likesCount=" + likesCount +
-                ", author=" + author +
-                '}';
+        return "Пост [" +
+                "Дата ='" + date + '\'' +
+                ", содержимое='" + content + '\'' +
+                ", количество лайков=" + likesCount +
+                ", автор = " + author +
+                ']';
     }
 }

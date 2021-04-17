@@ -38,10 +38,10 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Author{" +
-                "id=" + id +
-                ", nickname='" + nickname + '\'' +
-                ", birthdayDate='" + birthdayDate + '\'' +
-                '}';
+        return "Автор [" +
+                "айди= " + id +
+                ", ник ='" + nickname + '\'' +
+                ", день рождения ='" + birthdayDate + '\'' +
+                ']';
     }
 }
