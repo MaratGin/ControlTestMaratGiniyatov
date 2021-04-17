@@ -68,23 +68,22 @@ public class MainClass {
 
             authorslist.add(author);
         }
-
+// Работа с постмами---------------------------------------------------------
         List<Post> postslist= new ArrayList<Post>();
         List<String> fileLiness = Files.readAllLines(Paths.get(postsSourcePath));
 
         String[] splitetrr = new String[fileLiness.size()];
           String test="1234567890";
-
+        SimpleDateFormat format1 = new SimpleDateFormat(" ddMMyyyy'T'HHmm");
         for (String line:fileLiness) {
             splitetrr = line.split(",");
 
             Long id= Long.parseLong(splitetrr[0]);
              String[] splitetrForLikes=splitetrr[1].split(" ");
 
-
             Long likes=Long.parseLong(splitetrForLikes[1]);
-
-            String date= String.format(splitetrr[2],format );
+           // String date= String.format(splitetrr[2],format1 );
+            String date=String.format(splitetrr[2], format1);
             String text=splitetrr[3];
 
 
@@ -96,7 +95,9 @@ public class MainClass {
             }
 
         }
-
+        for (Post post:postslist) {
+            System.out.println(post);
+        }
 
 
 

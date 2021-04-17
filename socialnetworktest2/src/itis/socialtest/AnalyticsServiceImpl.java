@@ -17,16 +17,21 @@ public class AnalyticsServiceImpl implements AnalyticsService {
     @Override
     public String findMostPopularAuthorNickname(List<Post> posts) {
 
-        return null;
+       //return posts.stream()
+        return "ss";
+
     }
 
     @Override
     public Boolean checkPostsThatContainsSearchString(List<Post> posts, String searchString) {
-        return null;
+        return posts.stream()
+                .anyMatch(post -> post.getContent().contains(searchString));
     }
 
     @Override
     public List<Post> findAllPostsByAuthorNickname(List<Post> posts, String nick){
-        return null;
+        return  posts.stream()
+                .filter(post -> post.getAuthor().getNickname().equals("varlamov"))
+                .collect(Collectors.toList());
     }
 }
