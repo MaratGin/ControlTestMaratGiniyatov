@@ -17,7 +17,7 @@ public class AnalyticsServiceImpl implements AnalyticsService {
     @Override
     public String findMostPopularAuthorNickname(List<Post> posts) {
 
-       //return posts.stream()
+
         return "ss";
 
     }
